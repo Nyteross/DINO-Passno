@@ -34,7 +34,7 @@ npm start
 
 8. [Tester](http://localhost:8080)
 
-## Réponse aux questions
+## Réponses aux questions
 
 - **A) Quelles classes représentent le dinosaure en tant que tel ?**
    - a) Son personnage dans le jeu ?

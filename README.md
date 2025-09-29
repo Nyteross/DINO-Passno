@@ -90,3 +90,36 @@ npm start
      - Le génome représente le comportement et les décisions du dinosaure, si il va sauter ou se baisser par exemple, sont intelligence artificielle est défini par deux paramètres :
        - Le poids
        - Le biais
+
+## Expérimentation des différents modèles 
+
+
+###  DinoEnFormationA  
+- **Crossover** : un point choisi aléatoirement  
+- **Mutation** : faible (un seul gène changé)
+  Résultat : évolution lente mais régulière
+
+### DinoEnFormationB  
+- **Crossover** : coupure au milieu du chromosome
+- **Mutation** : deux gènes modifiés à chaque génération
+ Résultat : évolution plus rapide qu’A, mais parfois un peu instable
+
+### DinoEnFormationC  
+- **Crossover** : deux points → échange d’un segment complet
+- **Mutation** : probabiliste (20 % de chance de muter)
+  Résultat : bonne diversité, progression correcte mais un peu aléatoire
+
+### DinoEnFormationD  
+- **Crossover** : total (chaque gène choisi entre les deux parents)
+- **Mutation** : douce mais appliquée sur **tous** les gènes (petite variation)
+  Résultat : apprentissage stable, mais plus lent à trouver de vraies nouveautés
+
+### DinoEnFormationE  
+- **Crossover** : aucun (les enfants sont des clones des parents)
+- **Mutation** : extrême (chaque gène remplacé par une valeur aléatoire)
+  Résultat : beaucoup trop chaotique, les dinosaures régressent souvent
+
+## Conclusion
+
+Le **modèle B** et le **modèle C** donnent les meilleurs résultats.
+Ils permettent une évolution plus rapide et produisent des dinosaures plus performants que les autres modèles.  

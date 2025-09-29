@@ -4,12 +4,12 @@ import { Runner } from './game';
 
 import Generation from './ai/Generation';
 // import DinoIntelligent from './ai/DinoIntelligent';
-import DinoIntelligent from './ai/DinoEnFormation'; // Evite d'avoir a renommer toutes les references
+//import DinoIntelligent from './ai/DinoEnFormation'; // Evite d'avoir a renommer toutes les references
 //import DinoIntelligent from './ai/DinoEnFormationA';
 //import DinoIntelligent from './ai/DinoEnFormationB';
 //import DinoIntelligent from './ai/DinoEnFormationC';
 //import DinoIntelligent from './ai/DinoEnFormationD';
-//import DinoIntelligent from './ai/DinoEnFormationE';
+import DinoIntelligent from './ai/DinoEnFormationE';
 
 let firstTime = true;
 let runner = null;
